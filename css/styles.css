@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*general*/
+:root {
+  --color-pincipal: #00669f;
+  --color-secundario: #1cd1b0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+
+/*header*/
+#top {
+  background: var(--color-secundario);
+  padding: 2px 20px;
+  font-size: 25px;
+}
+
+header {
+  box-shadow: 0 3px 5px gray;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: var(--color-pincipal);
+}
+
+#titulo {
+  display: flex;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 40px;
+  color: white;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+header nav {
+  background-color: black;
+  text-align: right;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  list-style: none;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+/*main*/
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartas {
+  background: #f3f3f3;
+  width: 360px;
+  margin: 40px;
+  border-radius: 20px 20px 0 0;
+}
+
+.fondo {
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.fa-heart {
+  color: #cc2424;
+  position: relative;
+  font-size: 30px;
+  left: 15px;
+  top: 15px;
+}
+
+#batman_bg {
+  background-image: url(../img/bg-batman.jpg);
+}
+
+#wonder_woman_bg {
+  background-image: url(../img/bg-wonderw.jpg);
+}
+
+#harley_quinn_bg {
+  background-image: url(../img/bg-hquinn.png);
+}
+
+#superman_bg {
+  background-image: url(../img/bg-superman.jpg);
+}
+
+.contenido {
+  position: relative;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.contenido img {
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 75px);
+  top: -75px;
+}
+
+.contenido h2 {
+  text-transform: uppercase;
+  padding: 100px 0 25px;
+  font-size: 32px;
+}
+
+.contenido p {
+  margin: 0 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.contenido a {
+  background-color: var(--color-pincipal);
+  color: white;
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 5px;
+  position: relative;
+  bottom: -70px;
+}
+
+.fa-plus {
+  position: fixed;
+  right: 1%;
+  top: calc(50% - 32.5px);
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+  background: var(--color-pincipal);
+  border-radius: 50%;
+}
+
+.fa-plus:hover {
+  background-color: #000000;
+}
+
+/*footer*/
+footer {
+  background-color: var(--color-pincipal);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/*formularios*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 10%;
+}
+
+.formulario h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #333;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin: 7px;
+  border: 1.6px solid #000000;
+}
+
+.botones_formulario {
+  display: flex;
+}
+
+input[type="submit"] {
+  background: var(--color-secundario);
+  border: 1.6px solid var(--color-secundario);
+}
+
+input[type="reset"] {
+  background: #888;
+  border: 1.6px solid #888;
+  color: white;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  border-radius: 17px;
+  font-weight: bold;
+  margin-top: 30px;
+  flex-basis: 100%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  cursor: pointer;
+}
+
+.formulario p {
+  align-self: center;
+  margin-top: 10px;
+}
+
+/*anadir*/
+.cajaAnadir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anadir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-pincipal);
+  margin: 2%;
+  padding: 1% 5%;
+  border-radius: 25px;
+}
+
+.anadir h2, .anadir p, .anadir label {
+  color: white;
+}
+
+.anadir h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.anadir p {
+  padding: 5px;
+}
+
+.contenedorFormulario {
+  display: flex;
+}
+
+.anadir form, .columna-anadir, #poderes, #tipoDePersonaje{
+  display: flex;
+  flex-direction: column;
+}
+
+.columna-anadir {
+  width: 50%;
+}
+
+#poderes {
+  border-bottom: white 1px solid;
+  padding-bottom: 20px;
+}
+
+#tipoDePersonaje {
+  padding-top: 20px;
+}
+
+.anadir input, .anadir select, .anadir textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+}
+
+.anadir input[type="submit"]{
+  align-self: center;
+  font-size: 30px;
+  padding: 15px 120px;
+}
+
+.anadir input[type="submit"]:hover {
+  color: white;
+  background-color: black;
+  border: 1.6px solid black;
+}
+
+/*personajes*/
+.personajes {
+  display: flex;
+  justify-content: center;
+}
+.harleyQuinn {
+  background-image: url(../img/bg-hquinn.png);
+  background-size: cover;
+  background-position: center;
+}
+.mas_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f3f3;
+  width: 90%;
+  margin: 25%;
+  border-radius: 45px;
+}
+
+.foto_personaje {
+  position: absolute;
+  top: -20%;
+  border-radius: 50%;
+  width: 110px;
+}
+
+.mas_info h2 {
+  padding-top: 50px;
+  text-decoration: underline;
+  color: #2c0187;
+}
+
+.mas_info p {
+  margin: 10px 20px;
+  font-size: 14px;
+}
+
+.mas_info span {
+  color: #2c0187;
+}
+
+.volver {
+  display: flex;
+  justify-content: center;
+  background: #2c0187;
+  width: 450px;
+  border-radius: 0 0 45px 45px;
+  margin-top: 5px;
+}
+
+.mas_info a {
+  color: white;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.corazon_pixel {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  width: 33px;
+}
+
+/*media query*/
+@media screen and (min-width: 769px) {
+  .formulario {
+    align-items: center;
+    margin: 10% 25%;
+  }
+
+  .formulario form {
+    width: 100%;
+  }
+
+  .mas_info {
+    width: 450px;
+    margin: 10%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .formulario {
+    margin: 10% 30%;
+  }
+}

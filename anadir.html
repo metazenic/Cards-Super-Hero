@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Super Hero Cards</title>
+</head>
+
+<body>
+  <div id="top">
+    <p>¡20% de descuento en todos los productos!</p>
+  </div>
+  <header>
+    <div id="titulo">
+      <img src="./img/logoTienda.png" alt="logo tienda" />
+      <h2>Card Super Heroes</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./registro.html">Registrarme</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="cajaAnadir">
+      <div class="anadir">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <form action="#" method="POST">
+          <div class="contenedorFormulario">
+            <div class="columna-anadir">
+              <label for="nombre">* Nombre</label>
+              <input type="text" id="nombre" required/>
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" />
+              <textarea name="descripcion" id="descripcion" cols="30" rows="14" placeholder="descripción"></textarea>
+            </div>
+            <div class="columna-anadir">
+              <label for="especie">* Especie</label>
+              <select name="especie" id="especie" required>
+                <option value="" hidden selected>especie</option>
+                <option value="hum">Humano / Humana</option>
+                <option value="mar">Marciano / Marciana</option>
+                <option value="ext">Ser extradimencional</option>
+              </select>
+              <label for="foto">Agregar Foto</label>
+              <input type="file" name="foto" id="foto" accept=".jpg, .png" />
+              <div id="poderes">
+                <p>Poderes</p>
+                <label>
+                  <input type="checkbox" name="poderes" value="volar" />
+                  Volar
+                </label>
+                <label>
+                  <input type="checkbox" name="poderes" value="superinteligencia" />
+                  Superinteligencia
+                </label>
+                <label>
+                  <input type="checkbox" name="poderes" value="vistaDeRayoLaser" />
+                  Vista de rayo laser
+                </label>
+                <label>
+                  <input type="checkbox" name="poderes" value="billeteraGorda" />
+                  Billeter gorda
+                </label>
+              </div>
+              <div id="tipoDePersonaje">
+                <p>Tipo de personaje</p>
+                <label>
+                  <input type="radio" name="tipoDePersonaje" value="her">
+                  Héroe / heroina
+                </label>
+                <label>
+                  <input type="radio" name="tipoDePersonaje" value="vil">
+                  Villano / villana
+                </label>
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Añadir">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados a NICOLÁS CRISTALDO</p>
+  </footer>
+</body>
+
+</html>
